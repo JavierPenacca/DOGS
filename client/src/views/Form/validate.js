@@ -17,9 +17,13 @@ function validate(state) {
     }
     if (!state.heightMin) {
       errors.heightMin = "Se necesita una altura mínima";
+    } else {
+      state.heightMin = parseInt(state.heightMin);
     }
     if (!state.heightMax) {
       errors.heightMax = "Se necesita una altura máxima";
+    } else {
+      state.heightMax = parseInt(state.heightMax);
     }
     if (
       state.heightMin !== null &&
@@ -30,9 +34,13 @@ function validate(state) {
     }
     if (!state.weightMin) {
       errors.weightMin = "Se necesita un peso mínimo";
+    } else {
+      state.weightMin = parseInt(state.weightMin);
     }
     if (!state.weightMax) {
       errors.weightMax = "Se necesita un peso máximo";
+    } else {
+      state.weightMax = parseInt(state.weightMax);
     }
     if (
       state.weightMin !== null &&
@@ -43,9 +51,13 @@ function validate(state) {
     }
     if (!state.lifeSpanMin) {
       errors.lifeSpanMin = "Se necesita una expectativa de vida mínima";
+    } else {
+      state.lifeSpanMin = parseInt(state.lifeSpanMin);
     }
     if (!state.lifeSpanMax) {
       errors.lifeSpanMax = "Se necesita una expectativa de vida máxima";
+    } else {
+      state.lifeSpanMax = parseInt(state.lifeSpanMax);
     }
     if (
       state.lifeSpanMin !== null &&
