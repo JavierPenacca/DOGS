@@ -1,7 +1,7 @@
 const axios = require("axios");
 const cleanDogs = require("../helpers/cleanDogs");
 const { Dog, Temperament } = require("../db");
-const { API_KEY } = process.env;
+// const { API_KEY } = process.env;
 
 const allDogsController = async () => {
   try {

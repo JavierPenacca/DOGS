@@ -2,7 +2,7 @@ const axios = require("axios");
 const cleanSingleDog = require("../helpers/cleanSingleDog");
 const { Dog, Temperament } = require("../db");
 const { Op } = require("sequelize");
-const { API_KEY } = process.env;
+// const { API_KEY } = process.env;
 const cleanDogFromDB = require("../helpers/cleanDogFromDB");
 
 const dogByNameController = async (name) => {

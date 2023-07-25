@@ -1,9 +1,17 @@
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import { Landing, Home, Form, Detail } from "./views";
+
+// import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Henry Dogs</h1>
+    <div>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/home/:id" element={<Detail />} />
+        <Route path="/create" element={<Form />} />
+      </Routes>
     </div>
   );
 }
