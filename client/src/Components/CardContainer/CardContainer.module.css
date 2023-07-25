@@ -1,5 +1,6 @@
 .cardContainer{
-    background-image: url("../../image/5.png");
+    background-color:tomato;
+    /* background-image: url("../../image/5.png"); */
     border: 1px solid black;
     width: 85vw;
     margin: 0 auto;

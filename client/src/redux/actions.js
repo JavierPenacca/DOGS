@@ -12,7 +12,7 @@ import {
 
 export function getAllDogs() {
   return async function (dispatch) {
-    const response = await axios.get("http://localhost:3001/dogs3");
+    const response = await axios.get("http://localhost:3001/dogs");
     return dispatch({
       type: GET_DOGS,
       payload: response.data,
@@ -21,7 +21,7 @@ export function getAllDogs() {
 }
 export function getDogsById(id) {
   return async function (dispatch) {
-    const response = await axios.get(`http://localhost:3001/dogs3/${id}`);
+    const response = await axios.get(`http://localhost:3001/dogs/${id}`);
     return dispatch({
       type: GET_DOG_BY_ID,
       payload: response.data,
@@ -33,7 +33,7 @@ export function getDogByName(name) {
   return async function (dispatch) {
     try {
       const response = await axios.get(
-        `http://localhost:3001/dogs3?name=${name}`
+        `http://localhost:3001/dogs?name=${name}`
       );
 
       return dispatch({
@@ -59,7 +59,7 @@ export function getTemperament() {
 export const postDog = (form) => {
   return async function () {
     try {
-      const response = await axios.post("http://localhost:3001/dogs3", form);
+      const response = await axios.post("http://localhost:3001/dogs", form);
       alert(response.data);
     } catch (error) {
       alert(error);

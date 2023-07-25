@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getTemperament, postDog } from '../../redux/actions';
 
 import FormNav from '../../Components/NavBar/FormNav';
+import Footer from "../../Components/Footer/Footer";
 import validate from './validate';
 
 import styles from "./Form.module.css"
@@ -124,11 +125,11 @@ const Form = () => {
     <form className= {styles.form} onSubmit={handleSubmit}>
 {/*------------------------------------------------------------------------------------ */}      
 
-        <h1>Creating a new dog!</h1>
+        <h1>¡Vamos a crearle una raza a tu rescatadito!</h1>
 
 {/* ------------------------------------------------------------------------------------ */}
 
-        <h3 >Breed name</h3>
+        <h3 >Nueva Raza</h3>
       <div>
         <input 
         type="text" 
@@ -142,7 +143,7 @@ const Form = () => {
 
 {/*------------------------------------------------------------------------------------ */}
 
-        <h3 >Image</h3>
+        <h3 >Foto</h3>
       <div>
         <input 
         type="text" 
@@ -156,7 +157,7 @@ const Form = () => {
 
 {/*------------------------------------------------------------------------------------ */}
 
-        <h3 >Height</h3>
+        <h3 >Altura</h3>
 <div className={styles.ranges}>
         <input 
         type="number" 
@@ -182,7 +183,7 @@ const Form = () => {
 
 {/*------------------------------------------------------------------------------------ */}
 
-        <h3 >Weight </h3>
+        <h3 >Peso </h3>
 <div className={styles.ranges}>
         <input 
         type="number" 
@@ -208,7 +209,7 @@ const Form = () => {
 
 {/*------------------------------------------------------------------------------------ */}
 
-        <h3 >Life Span </h3>
+        <h3 >Espectativa de Vida </h3>
 <div className={styles.ranges}>
     
         <input 
@@ -235,7 +236,7 @@ const Form = () => {
 
 {/*------------------------------------------------------------------------------------ */}
 
-  <h3 >Dog temperament</h3>
+  <h3 >Temperamento</h3>
 <div className={styles.select}>
   <select
     onChange={handleTemperamentChange}>
@@ -270,6 +271,7 @@ const Form = () => {
       
     </form>
     <p></p>
+    <Footer />
     </div>
   );
 };

@@ -2,7 +2,7 @@
 .container {
     width: 70vw;
     padding: 3px;
-    background-image: url("../../image/5.png");
+    background-image: url("../../image/Fondo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -29,7 +29,8 @@
   }
   
   .paginado a {
-    background-color: #4caf50;
+    background-color: #da1717;
+    /* background-color: #4caf50; */
     color: #fff;
     border: none;
     height: 25px;

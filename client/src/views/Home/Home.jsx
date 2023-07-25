@@ -7,10 +7,11 @@ import {
   getDogByName,
 } from "../../redux/actions"
 
-import CardContainer from "../../Components/CardContainer/CardContainer"
-import NavBar from "../../Components/NavBar/NavBar"
+import CardContainer from "../../Components/CardContainer/CardContainer";
+import NavBar from "../../Components/NavBar/NavBar";
+import Footer from "../../Components/Footer/Footer";
 import FilterBar from "../../Components/FilterBar/FilterBar";
-import Paginado from "../../Components/Paginado/Paginado"
+import Paginado from "../../Components/Paginado/Paginado";
 
 import styles from "./Home.module.css"
 
@@ -64,6 +65,7 @@ useEffect(() => {
         allDogs={allDogs}
         paginado={paginado}/>
       <CardContainer allDogs={currentCharacters}/>
+      <Footer />
    </div>
   )
 }

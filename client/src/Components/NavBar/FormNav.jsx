@@ -2,7 +2,7 @@ import React from 'react';
 import ButtonLanding from '../Buttons/ButtonLanding';
 import ButtonHome from '../Buttons/ButtonHome';
 import styles from './FormNav.module.css';
-import logo from '../../image/logo-landing.png';
+import logo from '../../image/Logo-2.jpg';
 const FormNav = () => {
   return (
     <div className={styles.nav}>

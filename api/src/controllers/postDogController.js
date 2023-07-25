@@ -23,7 +23,7 @@ const postDogController = async (
         lifeSpan,
       },
     });
-    //prettier-ignore
+
     if (!created) {
       return res.status(400).json({ error: "El perro ya existe en nuestra base de datos." });
     }

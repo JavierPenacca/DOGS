@@ -5,7 +5,8 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: linear-gradient(to left, #F5F5DC, #D2B48C);
+    /* background: linear-gradient(to left, #F5F5DC, #D2B48C); */
+    background-image: url('../../image/Fondo.jpg');
   
     text-align:center;
   }

@@ -3,9 +3,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getDogsById } from '../../redux/actions';
 import { useParams } from 'react-router-dom';
 
-import NavBar from "../../Components/NavBar/NavBar"
+import NavBar from "../../Components/NavBar/NavBar";
+import Footer from "../../Components/Footer/Footer";
 
-import styles from "./Detail.module.css"
+import styles from "./Detail.module.css";
 
 const Detail = ()=> {
   const dispatch = useDispatch();
@@ -36,7 +37,7 @@ return(
     <h3>{`Temperament: ${dogDetail.temperament}.`}</h3>
 
     </div>
-
+    <Footer />
   </div>
   </div>
 )

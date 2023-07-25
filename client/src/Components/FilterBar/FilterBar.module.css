@@ -3,7 +3,7 @@
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    background-image: url(../../image/5.png);
+    background-image: url(../../image/Fondo.jpg);
     border-radius: 15px;
     margin-bottom: 10px;
     padding: 12px;
@@ -22,7 +22,7 @@
       margin-right: 0.3vw;
     }
     .bone{
-      background-image: url("../../image/bone.png");
+      background-image: url("../../image/Logo-2.jpg");
     }
     .imageLeft{
       height: 20px;

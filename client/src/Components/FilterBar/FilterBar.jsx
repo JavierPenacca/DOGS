@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
 
-import bone from "../../image/bone.png"
+import bone from "../../image/Logo-2.jpg"
 
 import {
   filterByTemperament,
