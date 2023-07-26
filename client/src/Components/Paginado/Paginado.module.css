@@ -19,7 +19,9 @@
   } 
   
   .paginado {
-    width: 65vw;
+    /* width: 65vw; */
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,11 +32,11 @@
   
   .paginado a {
     background-color: #da1717;
-    /* background-color: #4caf50; */
+
     color: #fff;
     border: none;
     height: 25px;
-    width: 20px;
+    /* width: 20px; */
     min-width: 20px;
     border-radius: 4px;
     cursor: pointer;
@@ -42,7 +44,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1; 
+    flex: 1;
+    /* flex-grow: 1;  */
     margin: 5px;
   }
   
