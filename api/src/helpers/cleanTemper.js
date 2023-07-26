@@ -23,8 +23,4 @@ function cleanTemper(dogs) {
     return temperaments;
   }
   
-  module.exports = cleanTemper;
-  
-  //Estuve debugeando casi 4hs para darme cuenta de que algunos temperamentos de la api no estan disponibles
-  //Esto me daba un error al utilizar el split y me rompia el codigo, sin retornar nada.
-  
+  module.exports = cleanTemper;  
