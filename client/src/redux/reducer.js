@@ -7,6 +7,7 @@ import {
     FILTER_BY_ORIGIN,
     FILTER_BY_WEIGHT,
     ORDER,
+    RESET_FILTERS,
   } from "./actionTypes";
   
   const initialState = {
@@ -98,6 +99,17 @@ import {
           allDogs: sortedDogs,
           filteredDogs: sortedDogs,
         };
+
+        case RESET_FILTERS:
+          return {
+            ...state,
+            // temperamentFilter: "",
+            // originFilter: "all",
+            // orderFilter: "sel",
+            // weightFilter: "sel",
+            allDogs: state.allDogsAux,
+            filteredDogs: state.allDogsAux,
+          };
   
       case FILTER_BY_WEIGHT:
         if (action.payload === "sel") {

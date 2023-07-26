@@ -1,18 +1,21 @@
-import styles from "./Buttons.module.css"
+import styles from "./Buttons.module.css";
 import { useDispatch } from "react-redux";
-import {getAllDogs} from "../../redux/actions"
+import { resetFilters, getAllDogs } from "../../redux/actions";
 
-const ButtonReset = ()=>{
+const ButtonReset = () => {
   const dispatch = useDispatch();
 
-const handleClick = ()=>{
-dispatch(getAllDogs())
-}
+  const handleClick = () => {
+    dispatch(resetFilters());
+    dispatch(getAllDogs());
+  };
 
   return (
-      <button 
+    <button
       className={styles.buttonReset}
       title="Reset"
-      onClick={handleClick}></button>
-    )}
-export default ButtonReset
+      onClick={handleClick}
+    ></button>
+  );
+};
+export default ButtonReset;

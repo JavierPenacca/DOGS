@@ -8,7 +8,8 @@ import {
   filterByTemperament,
   filterByOrigin,
   filterByOrder,
-  filterByWeight
+  filterByWeight,
+  resetFilters,
 } from "../../redux/actions"
 
 import styles from "./FilterBar.module.css"
@@ -41,13 +42,18 @@ const FilterBar = () => {
 
   }
 
+  const handleReset = () => {
+    dispatch(resetFilters());
+    // dispatch(getAllDogs());
+  };
+
 
   return (
 
     <div className={styles.filterBar}>
 
       <img src={logo} alt="" className={styles.imageLeft}/>
-      <ButtonReset/>
+      <ButtonReset onClick={handleReset}/>
 
       {/* Temperamento */}
       <label>Temperament:</label>

@@ -8,6 +8,7 @@ import {
   FILTER_BY_ORIGIN,
   FILTER_BY_WEIGHT,
   ORDER,
+  RESET_FILTERS,
 } from "./actionTypes";
 
 export function getAllDogs() {
@@ -90,5 +91,11 @@ export const filterByOrder = (direction) => {
   return {
     type: ORDER,
     payload: direction,
+  };
+};
+
+export const resetFilters = () => {
+  return {
+    type: RESET_FILTERS,
   };
 };
