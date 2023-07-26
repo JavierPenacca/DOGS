@@ -1,7 +1,8 @@
 import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
+import ButtonReset from '../Buttons/ButtonReset';
 
-import bone from "../../image/Logo-2.jpg"
+import logo from "../../image/Logo-2.jpg"
 
 import {
   filterByTemperament,
@@ -16,40 +17,37 @@ const FilterBar = () => {
   const dispatch = useDispatch();
   const allTemperaments = useSelector((state) => state.temperament)
   
-  //!-----Temperament
   const handleTemperamentFilterChange = (event)=>{
     const selectedOption = event.target.value;
     if(selectedOption !=="Select dog temperament"){
       dispatch(filterByTemperament(selectedOption))
     }
   }
-  //!-----Origin
   const handleOriginFilterChange = (event)=>{
     const selectedOption = event.target.value;
       dispatch(filterByOrigin(selectedOption))
   }
 
-//!-----Order
   const handleOrderFilterChange = (event)=>{
     const selectedOption = event.target.value;
     if(selectedOption === "asc" || selectedOption === "desc")
       dispatch(filterByOrder(selectedOption))
 
   }
-  //!-----Weight
+
   const handleWeightFilterChange = (event)=>{
     const selectedOption = event.target.value;
       dispatch(filterByWeight(selectedOption))
 
   }
 
-//!--------------------------------------------------------------
+
   return (
 
     <div className={styles.filterBar}>
 
-      <img src={bone} alt="" className={styles.imageLeft}/>
-
+      <img src={logo} alt="" className={styles.imageLeft}/>
+      <ButtonReset/>
 
       {/* Temperamento */}
       <label>Temperament:</label>
@@ -93,7 +91,7 @@ const FilterBar = () => {
       </select>
 
 
-      <img src={bone} alt="" className={styles.imageRight}/>
+      <img src={logo} alt="" className={styles.imageRight}/>
 
     </div>
   );

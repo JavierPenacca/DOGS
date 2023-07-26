@@ -1,9 +1,6 @@
-// import { Routes, Route } from "react-router-dom";
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Landing, Home, Form, Detail } from "./views";
 
-// import './App.css';
 
 function App() {
   return (

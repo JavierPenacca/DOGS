@@ -20,7 +20,6 @@ const Home =()=>{
   const dispatch = useDispatch();
   const allDogs= useSelector((state) => state.allDogs)
 
-  //!-------Paginado
   const [currentPage, setCurrentPage] = useState(1)
   // eslint-disable-next-line no-unused-vars
   const [dogsPerPage, setDogsPerPage] = useState(8)
@@ -48,14 +47,12 @@ const Home =()=>{
 }
 
 
-
-//!------------------------------------------------------------
 useEffect(() => {
  if(allDogs.length===0){dispatch(getAllDogs());};  
   dispatch(getTemperament());
 // eslint-disable-next-line react-hooks/exhaustive-deps
 }, [dispatch]);
-//!------------------------------------------------------------
+
   return (
     <div className={styles.home}>
       <NavBar handleChange={handleChange} handleSubmit={handleSubmit}/>

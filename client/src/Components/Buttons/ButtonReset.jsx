@@ -12,6 +12,7 @@ dispatch(getAllDogs())
   return (
       <button 
       className={styles.buttonReset}
+      title="Reset"
       onClick={handleClick}></button>
     )}
 export default ButtonReset

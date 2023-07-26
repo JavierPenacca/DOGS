@@ -3,7 +3,7 @@ import styles from "./Buttons.module.css"
 const ButtonLanding = ()=>{
   return (
 <Link to="/">
-      <button className={styles.buttonLanding}></button>
+      <button className={styles.buttonLanding} title="Landing"></button>
 </Link>
     )}
 export default ButtonLanding

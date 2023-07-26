@@ -123,11 +123,11 @@ const Form = () => {
       <FormNav/>
       </div>
     <form className= {styles.form} onSubmit={handleSubmit}>
-{/*------------------------------------------------------------------------------------ */}      
+      
 
         <h1>¡Vamos a crearle una raza a tu rescatadito!</h1>
 
-{/* ------------------------------------------------------------------------------------ */}
+
 
         <h3 >Nueva Raza</h3>
       <div>
@@ -141,7 +141,6 @@ const Form = () => {
         {errors.name && <p  className={styles.error}>{errors.name}</p>}
       </div>
 
-{/*------------------------------------------------------------------------------------ */}
 
         <h3 >Foto</h3>
       <div>
@@ -155,7 +154,6 @@ const Form = () => {
         {errors.image && <p  className={styles.error}>{errors.image}</p>}
       </div>
 
-{/*------------------------------------------------------------------------------------ */}
 
         <h3 >Altura</h3>
 <div className={styles.ranges}>
@@ -181,7 +179,7 @@ const Form = () => {
         {errors.heightMax && <p  className={styles.error}>{errors.heightMax}</p>}
       </div>
 
-{/*------------------------------------------------------------------------------------ */}
+
 
         <h3 >Peso </h3>
 <div className={styles.ranges}>
@@ -207,7 +205,7 @@ const Form = () => {
         {errors.weightMax && <p  className={styles.error}>{errors.weightMax}</p>}
       </div>
 
-{/*------------------------------------------------------------------------------------ */}
+
 
         <h3 >Espectativa de Vida </h3>
 <div className={styles.ranges}>
@@ -234,7 +232,7 @@ const Form = () => {
         {errors.lifeSpanMax && <p  className={styles.error}>{errors.lifeSpanMax}</p>}
       </div>
 
-{/*------------------------------------------------------------------------------------ */}
+
 
   <h3 >Temperamento</h3>
 <div className={styles.select}>
@@ -265,7 +263,7 @@ const Form = () => {
         {errors.temperament && <p className={styles.error}>{errors.temperament}</p>}
       </div>
 
-{/*------------------------------------------------------------------------------------ */}   
+  
 
       <button className={styles.submit} type="submit" onClick={handleSubmit}>Submit</button>
       
@@ -275,5 +273,5 @@ const Form = () => {
     </div>
   );
 };
-/*-------------------------------------------------------------------------------------- */
+
 export default Form;

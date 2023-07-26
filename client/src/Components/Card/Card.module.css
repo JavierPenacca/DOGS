@@ -15,6 +15,16 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);;
     color:tomato; 
    }
+   .card h1 {
+    margin-bottom: 5px; /* Reduce el margen inferior del nombre */
+    font-size: 24px; /* Ajusta el tamaño del nombre */
+  }
+  
+  .card h3 {
+    margin-top: 3px; /* Reduce el margen superior del temperamento */
+    margin-bottom: 3px; /* Reduce el margen inferior del temperamento */
+    font-size: 17px; /* Ajusta el tamaño del temperamento */
+  }
    
    .card:hover{
    transform:scale(1.05)

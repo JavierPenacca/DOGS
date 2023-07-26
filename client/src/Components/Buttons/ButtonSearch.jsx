@@ -1,9 +1,14 @@
-import React from 'react';
-import styles from './Buttons.module.css';
+import React from "react";
+import styles from "./Buttons.module.css";
 
 const ButtonSearch = ({ onClick }) => {
   return (
-    <button type="submit" className={styles.buttonSearch} onClick={onClick}>
+    <button
+      type="submit"
+      className={styles.buttonSearch}
+      title="Search"
+      onClick={onClick}
+    >
       Search!
     </button>
   );

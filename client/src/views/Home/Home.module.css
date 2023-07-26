@@ -7,7 +7,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     /* background: linear-gradient(to left, #F5F5DC, #D2B48C); */
     background-image: url('../../image/Fondo.jpg');
-  
+    margin-bottom: 80px;
     text-align:center;
   }
   
